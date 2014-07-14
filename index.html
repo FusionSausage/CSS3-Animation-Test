@@ -3,6 +3,7 @@
 <head>
   <title>Test</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="animwrapper">
@@ -17,7 +18,19 @@
   <div class="glidebahn">
     <div class="loadingindicator"></div>
   </div>
-  <div class="lucka"></div>
-    <div class="openclose"></div>
+
+  <div class="hamburger"><!--DAMBURGER!!! (Ref. Pink Panther) -->
+    <div class="slice cheese"></div>
+    <div class="slice meat"></div>
+    <div class="slice salad"></div>
+  </div>
+
+  <script>
+    $(".hamburger").click(function(){
+      $(".cheese").toggleClass("active");
+      $(".meat").toggleClass("active");
+      $(".salad").toggleClass("active");
+  });
+  </script>
 
 </body>
